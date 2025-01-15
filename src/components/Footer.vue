@@ -42,10 +42,7 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p class="copyright">
-          © 2024 - {{ new Date().getFullYear() }}&nbsp;X-Element LLC - All
-          Rights Reserved.
-        </p>
+        <p class="copyright">© 2024 X-Element LLC - All Rights Reserved.</p>
       </div>
     </div>
   </footer>
@@ -91,7 +88,7 @@ export default {
   },
   computed: {
     footerTopClass() {
-      return this.hideFooterTop ? "footer-top hide" : "section footer-top";
+      return this.hideFooterTop ? "footer-top hide" : "footer-top";
     },
   },
 };
@@ -99,7 +96,6 @@ export default {
 
 <style>
 .footer-top {
-  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -213,8 +209,7 @@ export default {
   .footer-brand {
     display: flex;
     justify-content: space-evenly;
-    /* gap: 5%; */
-    padding-top: 2rem;
+    gap: 5%;
   }
 
   .footer-logo {
@@ -222,6 +217,7 @@ export default {
     width: 205px;
     height: auto;
     margin-top: -4rem;
+    margin-left: -3rem;
   }
 
   .footer-text {
@@ -239,7 +235,10 @@ export default {
   .footer-brand {
     padding-top: 0;
     margin-top: -2rem;
-    gap: 10%;
+  }
+
+  .footer-logo {
+    margin-left: 0;
   }
 }
 </style>

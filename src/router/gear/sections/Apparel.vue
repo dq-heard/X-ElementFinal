@@ -50,7 +50,7 @@ export default {
 <style>
 .apparel {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-block-end: 0 !important;
 }
 
 /*-----------------------------------*\

@@ -140,7 +140,7 @@ export default {
 <style>
 .roles {
   padding-top: var(--section-spacing);
-  padding-block-end: 0;
+  padding-block-end: 1rem !important;
 }
 
 .role-intro {
@@ -223,6 +223,11 @@ export default {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+@media screen and (min-width: 575px) {
+  .roles {
+    padding-block-end: var(--section-spacing) !important;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .roles .container {
